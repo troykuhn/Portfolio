@@ -160,7 +160,7 @@ div.bottompics
 #aboutme {
     float: left;
     position: relative;
-    width: 50%;
+    width: 52%;
     margin-top: 1%;
     margin-bottom: 3%;
     padding: 1.0em;
@@ -197,7 +197,7 @@ div#sidebar{
 }
 #resume{
     margin-right: 5%;
-    margin-left: 15%;
+    margin-left: 8%;
     display: block;
     clear: both;
 }
@@ -214,7 +214,7 @@ section#main
 div.panel{
     float:left;
     position: relative;
-    width: 260px;
+    width: 245px;
     margin: .5em .5em .5em .5em;
     padding: 1.0em;
     background-color: #051529;
