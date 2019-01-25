@@ -56,6 +56,59 @@ div#header{
 
 #header p{
     color: whitesmoke;
+    text-decoration: underline;
+}
+
+div#details
+{
+    border: 10px solid rgb(206, 40, 40);
+    border-radius: 1em;
+    width: 25%;
+    margin-right: 15%;
+    margin-top: 1%;
+    float: right;
+    background-color: #051529;
+    background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
+    color: whitesmoke;
+}
+
+div#details b{
+    color:rgb(206, 40, 40);
+    size: 80px;
+}
+
+#details h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+#details ul{
+    padding-left: 6.5em;
+}
+
+#details img{
+    margin-top: 2em;
+    border-radius: 40%;
+    border: 2px solid whitesmoke;
+    margin-left: 25%;
+}
+
+#sidebar h2{
+    text-decoration: underline;
+}
+
+div#sidebar{
+    margin-bottom: 3em;
+    border: 10px solid rgb(206, 40, 40);
+    border-radius: 1em;
+    width: 25%;
+    margin-right: 15%;
+    margin-top: 4%;
+    float: right;
+    color: whitesmoke;
+    background-color: #051529;
+    background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
 }
 
 img#osu{
@@ -87,6 +140,7 @@ div.bottompics
     text-align: center;
     padding-top: 5%;
     font-size: 100px;
+    text-decoration: underline;
 }
 
 #aboutme p {
@@ -159,7 +213,7 @@ section#main
 div.panel{
     float:left;
     position: relative;
-    width: 250px;
+    width: 260px;
     margin: .5em .5em .5em .5em;
     padding: 1.0em;
     background-color: #051529;
