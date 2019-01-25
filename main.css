@@ -84,14 +84,15 @@ div#details b{
 
 
 #details ul{
-    padding-left: 6.5em;
+    padding-left: 10%;
 }
 
 #details img{
     margin-top: 2em;
     border-radius: 40%;
     border: 2px solid whitesmoke;
-    margin-left: 25%;
+    margin-left: 20%;
+    position: relative;
 }
 
 #sidebar h2{
@@ -102,7 +103,7 @@ div#sidebar{
     margin-bottom: 3em;
     border: 10px solid rgb(206, 40, 40);
     border-radius: 1em;
-    width: 25%;
+    width: 35%;
     margin-right: 15%;
     margin-top: 4%;
     float: right;
