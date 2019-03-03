@@ -1,308 +1,448 @@
 
- /*vh = viewheight , for sizing*/
-
- html {
-     cursor: url(../Portfolio/Assets/gloves.png), auto;
- }
- 
- 
-body {
-    background-color: #061530;
-    background-image: url("https://www.transparenttextures.com/patterns/vintage-speckles.png");
-    font-family: 'Righteous', cursive;
-}
-
-#navbar {
-margin-bottom: 5%;
-width: 100%;
-height: 150px;
-z-index: 1;
-background-color: #051529;
-background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
-border: 3px solid rgb(206, 40, 40);
-border-radius: 1em;
-}
-
-ul > li > a {
-    font-size: 150%;
-    color: whitesmoke;
-}
-ul > li > a.resume{
-    font-size: 150%;
-}
-
-#header {
-    color: whitesmoke;
-    background-color: #051529;
-    background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
-    font-family: 'Righteous', cursive;
-    margin-bottom: 3%;
-    padding-top: 3%;
-    margin-right:auto;
-    margin-left: auto;
-    
-}
-
-div#header{
-    width: 30%;
-    text-align: center;
-    border: 10px solid rgb(206, 40, 40);
-    border-radius: 1em;
+  .confetti-piece {
+    position: absolute;
+    width: 8px;
+    height: 16px;
+    background: #ffd300;
+    top: 0;
+    opacity: 0;
+  }
+  .confetti-piece:nth-child(1) {
+    left: 7%;
+    -webkit-transform: rotate(-73deg);
+            transform: rotate(-73deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+            animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 243ms;
+            animation-delay: 243ms;
+    -webkit-animation-duration: 922ms;
+            animation-duration: 922ms;
+  }
+  .confetti-piece:nth-child(2) {
+    left: 14%;
+    -webkit-transform: rotate(23deg);
+            transform: rotate(23deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+            animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 64ms;
+            animation-delay: 64ms;
+    -webkit-animation-duration: 940ms;
+            animation-duration: 940ms;
+  }
+  .confetti-piece:nth-child(3) {
+    left: 21%;
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+            animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 324ms;
+            animation-delay: 324ms;
+    -webkit-animation-duration: 936ms;
+            animation-duration: 936ms;
+  }
+  .confetti-piece:nth-child(4) {
+    left: 28%;
+    -webkit-transform: rotate(28deg);
+            transform: rotate(28deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+            animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 55ms;
+            animation-delay: 55ms;
+    -webkit-animation-duration: 1080ms;
+            animation-duration: 1080ms;
+  }
+  .confetti-piece:nth-child(5) {
+    left: 35%;
+    -webkit-transform: rotate(-52deg);
+            transform: rotate(-52deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+            animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 169ms;
+            animation-delay: 169ms;
+    -webkit-animation-duration: 1052ms;
+            animation-duration: 1052ms;
+  }
+  .confetti-piece:nth-child(6) {
+    left: 42%;
+    -webkit-transform: rotate(-54deg);
+            transform: rotate(-54deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+            animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 218ms;
+            animation-delay: 218ms;
+    -webkit-animation-duration: 961ms;
+            animation-duration: 961ms;
+  }
+  .confetti-piece:nth-child(7) {
+    left: 49%;
+    -webkit-transform: rotate(-75deg);
+            transform: rotate(-75deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+            animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 101ms;
+            animation-delay: 101ms;
+    -webkit-animation-duration: 762ms;
+            animation-duration: 762ms;
+  }
+  .confetti-piece:nth-child(8) {
+    left: 56%;
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+            animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 70ms;
+            animation-delay: 70ms;
+    -webkit-animation-duration: 1197ms;
+            animation-duration: 1197ms;
+  }
+  .confetti-piece:nth-child(9) {
+    left: 63%;
+    -webkit-transform: rotate(32deg);
+            transform: rotate(32deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+            animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 404ms;
+            animation-delay: 404ms;
+    -webkit-animation-duration: 1110ms;
+            animation-duration: 1110ms;
+  }
+  .confetti-piece:nth-child(10) {
+    left: 70%;
+    -webkit-transform: rotate(-48deg);
+            transform: rotate(-48deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+            animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 390ms;
+            animation-delay: 390ms;
+    -webkit-animation-duration: 771ms;
+            animation-duration: 771ms;
+  }
+  .confetti-piece:nth-child(11) {
+    left: 77%;
+    -webkit-transform: rotate(-21deg);
+            transform: rotate(-21deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+            animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 90ms;
+            animation-delay: 90ms;
+    -webkit-animation-duration: 842ms;
+            animation-duration: 842ms;
+  }
+  .confetti-piece:nth-child(12) {
+    left: 84%;
+    -webkit-transform: rotate(-37deg);
+            transform: rotate(-37deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+            animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 344ms;
+            animation-delay: 344ms;
+    -webkit-animation-duration: 1191ms;
+            animation-duration: 1191ms;
+  }
+  .confetti-piece:nth-child(13) {
+    left: 91%;
+    -webkit-transform: rotate(-68deg);
+            transform: rotate(-68deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+            animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 258ms;
+            animation-delay: 258ms;
+    -webkit-animation-duration: 758ms;
+            animation-duration: 758ms;
+  }
+  .confetti-piece:nth-child(odd) {
+    background: #17d3ff;
+  }
+  .confetti-piece:nth-child(even) {
+    z-index: 1;
+  }
+  .confetti-piece:nth-child(4n) {
+    width: 5px;
+    height: 12px;
+    -webkit-animation-duration: 2000ms;
+            animation-duration: 2000ms;
+  }
+  .confetti-piece:nth-child(3n) {
+    width: 3px;
+    height: 10px;
+    -webkit-animation-duration: 2500ms;
+            animation-duration: 2500ms;
+    -webkit-animation-delay: 1000ms;
+            animation-delay: 1000ms;
+  }
+  .confetti-piece:nth-child(4n-7) {
+    background: #ff4e91;
+  }
+  
+  @-webkit-keyframes makeItRain {
+    from {
+      opacity: 0;
     }
+    50% {
+      opacity: 1;
+    }
+    to {
+      -webkit-transform: translateY(200px);
+              transform: translateY(200px);
+    }
+  }
+  
+  @keyframes makeItRain {
+    from {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    to {
+      -webkit-transform: translateY(200px);
+              transform: translateY(200px);
+    }
+  }
+  
+  
+/*The MIT License (MIT)
 
-#header h1{
-    color: whitesmoke;
-}
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-#header p{
-    color: whitesmoke;
-    text-decoration: underline;
-}
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-div#details
-{
-    border: 10px solid rgb(206, 40, 40);
-    border-radius: 1em;
-    width: 25%;
-    margin-right: 15%;
-    margin-top: 1%;
-    float: right;
-    background-color: #051529;
-    background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
-    color: whitesmoke;
-}
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-div#details b{
-    color:rgb(206, 40, 40);
-    size: 80px;
-}
+https://opensource.org/licenses/MIT
 
-#details h2{
-    text-align: center;
-    text-decoration: underline;
-}
+*/
 
-
-#details ul{
-    padding-left: 10%;
-}
-
-#details img{
-    margin-top: 2em;
-    border-radius: 40%;
-    border: 2px solid whitesmoke;
-    margin-left: 20%;
-    position: relative;
-}
-
-#sidebar h2{
-    text-decoration: underline;
-}
-
-div#sidebar{
-    margin-bottom: 3em;
-    border: 10px solid rgb(206, 40, 40);
-    border-radius: 1em;
-    width: 35%;
-    margin-right: 15%;
-    margin-top: 4%;
-    float: right;
-    color: whitesmoke;
-    background-color: #051529;
-    background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
-}
-
-img#osu{
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .ir {
     display: block;
+    overflow: visible;
+    padding: 0 0 100%;
+    position: relative;
+    height: 0;
+    width: 100%;
+  }
+  
+  .ir > * {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  html {
+    font-size: 0.625em;
+  }
+  
+  .soc {
+    display: inline-flex;
+    font-size: 0;
+    list-style: none;
+    padding: 48px;
+    padding: 4.8rem;
+    text-align: center;
+    width: 110rem;
+  }
+  .soc li {
+    display: inline-flex;
+    margin: 12px;
+    margin: 1.2rem;
+  }
+  .soc a, .soc svg {
+    display: inline-flex;
+  }
+  .soc a {
+    position: relative;
+    height: 96px;
+    height: 9.6rem;
+    width: 96px;
+    width: 9.6rem;
+  }
+  
+  .icon-1:hover, .icon-2:hover, .icon-3:hover, .icon-4:hover, .icon-5:hover, .icon-6:hover, .icon-7:hover, .icon-8:hover, .icon-9:hover, .icon-10:hover, .icon-11:hover, .icon-12:hover, .icon-13:hover, .icon-14:hover, .icon-15:hover, .icon-16:hover, .icon-17:hover, .icon-18:hover, .icon-19:hover, .icon-20:hover, .icon-21:hover, .icon-22:hover, .icon-23:hover, .icon-24:hover, .icon-25:hover, .icon-26:hover, .icon-27:hover, .icon-28:hover, .icon-29:hover, .icon-30:hover, .icon-31:hover, .icon-32:hover {
+    border-radius: 100%;
+    color: #0e1a25;
+    fill: #0e1a25;
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+    transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+    transition: background-color 0.5s, transform 0.5s ease-out;
+    transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  }
+  
+  .icon-10 {
+    color: #26d926;
+    fill: #26d926;
+  }
+  .icon-10:hover {
+    background: #26d926;
+  }
+
+  .icon-13 {
+    color: #26d991;
+    fill: #26d991;
+  }
+  .icon-13:hover {
+    background: #26d991;
+  }
+  
+  .icon-15 {
+    color: #26d9d9;
+    fill: #26d9d9;
+  }
+  .icon-15:hover {
+    background: #26d9d9;
+  }
+
+  .icon-17 {
+    color: #2691d9;
+    fill: #2691d9;
+  }
+  .icon-17:hover {
+    background: #2691d9;
+  }
+
+  .icon-26 {
+    color: #d926b5;
+    fill: #d926b5;
+  }
+  .icon-26:hover {
+    background: #d926b5;
+  }
+
+  .lead {
+      font-size: 2rem;
+  }
+  
+  .center {
+    display: block;
+    margin-left: auto;
     margin-right: auto;
-    margin-left:auto;
-}
+    border-radius: 50%;
+  }
 
-div.bottompics
-    {
+  .center2 {
+    margin-top: 5vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    border-radius: 10%;
+  }
+
+  .center3 {
+    margin-top: 5vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 70%;
+    border-radius: 10%;
+  }
+
+  .project1 {
+        margin-top: 5vh;
         display: block;
-        clear: both;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: auto;
+        border-radius: 10%;
+  }
+
+div.modalbox {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 140%;
+    
+} 
+
+.modal-body {
+    background-color: #1d2022;
+    color: whitesmoke;
+}
+
+.modal-header {
+background: whitesmoke;
+}
+
+.modal-footer {
+background: whitesmoke;
+}
+
+p {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.btn-primary {
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: .25em .25em 0 .25em;
+    font-size: 2em;
+}
+
+.modal-open {
+    overflow: visible;
+}
+
+body {
+    background-color: #1d2022;
+    overflow: visible;
+}
+
+.jumbotron h1 {
+    font-size: 20vh;
+        background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+        background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+        background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+        background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
-
-#aboutme img#me
-{
-    border-radius: 70%;
-    border: 3px solid rgb(206, 40, 40);
-    width: 320px;
-    height: 260px;
-    position: relative;
-    float: right;
 }
 
+.jumbotron p {
+        font-size: 5vh;
+        color: #b5270f;
+        text-shadow: -1px -1px 10px #9fffffc9, 1px -1px 20px #ffe0e0, -20px 14px 20px #000, 1px 1px 0 #000;
+}
 
-#aboutme h1
-{
+html{
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+  #header {
+    background:#1d2022;
     color: whitesmoke;
-    text-align: center;
-    padding-top: 5%;
-    font-size: 100px;
-    text-decoration: underline;
+    padding-top: 10%;
 }
 
-#aboutme p {
-    text-shadow: darkslategray;
-    color: whitesmoke;
-    text-align: center;
-    padding-right: 5%;
-    padding-left: 5%;
-}
-
-#aboutme video{  
-    float: left;
-}
-
-
-#aboutme {
-    float: left;
-    position: relative;
-    width: 52%;
-    margin-top: 1%;
-    margin-bottom: 3%;
-    padding: 1.0em;
-    background-color: #051529;
-    background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
-    border: 10px solid rgb(206, 40, 40);
-    border-radius: 0.5em;
-    color: whitesmoke;
-}
-
-div#sidebar{
-    border: 10px solid rgb(206, 40, 40);
-    border-radius: 1em;
-    width: 25%;
-    margin-right: 15%;
-    margin-top: 1%;
-    float: right;
-    color: whitesmoke;
-    background-color: #051529;
-    background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
-}
-
-#sidebar h2{
-    text-align: center;
-    size: 120%;
-}
-
-#sidebar img {
+ul#skills li img {
     width: 50px;
     height: 50px;
     border-radius: 25px;
     margin: 1em 1em 0em 1em;
     border: 1px solid whitesmoke;
 }
-#resume{
-    margin-right: 5%;
-    margin-left: 8%;
-    display: block;
-    clear: both;
-}
-
-
-section#main
-{
-    display: block;
-    clear: both;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-div.panel{
-    float:left;
-    position: relative;
-    width: 245px;
-    margin: .5em .5em .5em .5em;
-    padding: 1.0em;
-    background-color: #051529;
-    background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
-    border:5px solid rgb(206, 40, 40);
-    border-radius: 1em;
-    color: whitesmoke;
-   }
-
-   section div.panel img.project {
-    width: 100%;
-   }
-
-   button {
-    color: whitesmoke;
-    background-color: #1b2d53c7;
-    display: inline-block;
-    margin: 0 0.75em 0 0;
-    padding: 0.2em 0.5em;
-    border: 2px solid rgb(206, 40, 40);
-    text-transform: uppercase;
-}
-
-button:hover { 
-    color:rgb(206, 40, 40);
-    background-color: #FBF3DB;
-    border: 4px solid #277a85;
-}
-
-#footer {
-    
-    position:fixed;
-    left:0px;
-    bottom:0px;
-    height:30px;
-    width:100%;
-    background-color: #061530;
-    background-image: url("https://www.transparenttextures.com/patterns/vintage-speckles.png");
-    border: 2px solid rgb(206, 40, 40);
-    border-radius: 1em;
-    }
-
-section#contact
-{
-    display: block;
-    clear: both;
-    margin-top: 10%;
-    width:65%;
-    border: rgb(206, 40, 40) solid 10px;
-    border-radius: 1em;
-    margin-right:auto;
-    margin-left: auto;
-}
-
-section#contact h2{
-    color: whitesmoke;
-    text-align: center;
-    padding-top: 10px;
-}
-
-section#contact label{
-    color: whitesmoke;
-    font-size: 20px;
-}
-
-section#contact div.container{
-        background-color: #051529;
-        background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
-    }
-    
-    section#contact button{
-        margin-bottom: 10px;
-    }
-
-    #footer p{
-    float: left;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-family: 'Righteous', cursive;
-    color: whitesmoke;
-    background-size: cover;
-    }
-
-    #SocialMediaLinks img {
-        width: 30px;
-        height: 30px;
-        border-radius: 25px;
-        margin: 0em 1em 0em 1em;
-        border: 1px solid whitesmoke;
-        
-    }

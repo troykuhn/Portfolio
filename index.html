@@ -1,235 +1,331 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Troy Kuhn's Porfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Troy Kuhn's Portfolio</title>
 
-  <!--Bootstrap CSS File-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-    crossorigin="anonymous">
 
-  <link rel="stylesheet" type="text/css" href="main.css">
+    <!--Bootstrap CSS File-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
 
-  <!--Header font link rel-->
-  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <!--Bootstrap JS Files-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
 
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
-<body>
-  <nav id="navbar" class="navbar navbar-expand">
-    <a class="navbar-brand" id="brand" href="#"></a>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav" id="links">
-        <li class="nav-item">
-          <a class="nav-link" href="#header">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#main">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#aboutme">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#resume">My Resume</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!--Header-->
+<wrapper class="row col-12">
+    <div class="col-4"></div>
+    <div class="modalbox col-4 justify-content-center">
 
-  <div id="header" class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4 text-center">Troy Kuhn</h1>
-      <div class="text-center">
-        <p class="lead text-center">Junior .NET Developer</p>
-        <a class="btn btn-primary btn-md" href="#main" role="button">View My Projects</a>
-      </div>
-    </div>
-  </div>
- 
-  <br>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#aboutModal">
+            About
+        </button>
 
-  <!--About-->
-      <section id="about">
-      <div id="aboutme">
-      <h1>About</h1>
-      <img id ="osu" width="200" height="160" src="https://cdn.freebiesupply.com/logos/large/2x/ohio-state-buckeyes-logo-png-transparent.png">
-      <p>I am a graduate of The Ohio State University where I earned my Bachelor's degree in Strategic Communications.
-        I also lettered all four years as a member of the school's baseball team. Along with being recognized as a
-        scholar-athlete in the classroom, I also won individual and team awards including a Big Ten Championship in
-        2016.</p>
+        <!-- Modal -->
+        <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="aboutModalLabel">About</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <img src="https://lh3.googleusercontent.com/In-orMHIj2g6JQG3tUfoz5j6sXcXbXER49pStczjk8vXGODXXBsx04womg4TFC8yUe2Q7IlqdePKhtONa3aj_61OsCp32n1hq35oN5ESeK994snug7olFjCrdXkaojdhBed6j7qqTpQPlgRVzABYLKEI9ghu2BaMAlfViuF53Af8Ng1VRpuShBgmMcsoP_W1ZtmOIQP1KmIUkjkmA5s4hkSD2aEccn04N7_xOhjqSER_749kHs2OyauTdkbxPDXhQ6aTK045-buAC2fACerd4so9BQNlPW3zTFVJYotbrZ8XqnBGroZxpui5gCrAFQUpLjqoVaQKS0v8RghMH6oX5t90CCpOycn35xjFoY9zzRxJFL6alH76RvudYgnf2Kwvau7g__St2Fcj9njZPkA26PjQFEOOeriETNueNVErC0WLbB9BIT1JA4FGuElyC7wlaXvAKn8vlHRNH5xNGT5Kx9w9a0gKH7FJa92sJFzN77VAuFLxY5YOlddV0MIRKVcHGfRjulXoZADo2UMyCFGVmWiT3lYuSKQEcpeUJUvdjurhC9WRVrkUmXlHvvsUpwEg1noorxA4ZxMiSq5vkGqYEgscPLEFiSB8ZPloT_cHlq0aV5fIKdsUkJ65UdPtVSxfDEiPuvfRZ4fmUO-tSqx52L1IdKewxnkdE8QhlDIg58PtPNOhNZ1KCsWUbV9K7-X_RMEm7APYUrpZJ5Sm76iqzCmZ=s200-no" alt="headshot" class="center">
+                            <h2>Bio</h2>
+                            <p><b>Name:</b> Troy Kuhn</p>
+                            <p><b>Age:</b> 25 years old</p>
+                            <p><b>Hometown: </b>Zionsville, Indiana</p>
+                            <p><b>Email: </b> troykuhn22@gmail.com</p>
+                        </form>
+                        <form>
+                            <img src="http://pluspng.com/img-png/ohio-state-png--1200.png" alt="headshot" class="center3">
+                            <h2>Education</h2>
+                            <p><b>The Ohio State University: School of Communication</b></p>
+                            <p>Bachelor's Degree in Strategic Communication</p>
+                            <p><b>Eleven Fifty Academy</b></p>
+                            <p>12-Week Accelerated .NET Programming Bootcamp</p>
 
-      <p>I am the ultimate teamplayer with a background in operations and customer service. I am a self-starter who thrives in
-        fast-paced environments. I aspire to be autonomous on any project I am currently working on. I enjoy learning
-        new things as well as teaching others to accomplish whatever goal is at hand.</p>
-<div class="bottompics">
-    <video width="320" height="240" controls="">
-      <source src="../Portfolio/Assets/Troy Kuhn RBI Double vs. Iowa.mp4" type="video/mp4">
-    </video>  
-    <img id="me" src="../Portfolio/Assets/homerun.jpg" alt="troykuhnohiostatebaseball">
-  </div>
-</div>
-</section>
+                            <img src="https://lh3.googleusercontent.com/pA4f79E2fk7_3Mo1O_k3qyZrkOIpvz_jkYyRNJuy6_x9_UiZzjhDACNKsctfkVH_-_7QzjPUeRxQ4CIBhvaQFNhPvsQ9g62Jdsgkyvf8exyCMutY50XdNno3Mvf0ibWg7av7d-98430Qd-ClkRrNf5AWeu7DCXJaE5TEYVJLj4uUY2J56IcGAgHZb9E0o1qnBzuiKzUfnHAju3M4lvp3lcbeJn3pI6tJtMViijFKxSerl54QwPTUwcOhxX0O6AB16mMXpF2LSlbdLsE0umjfGwy6F0XQmeq4RGYMlJwxe1l8gTMHFyiJJa-VJZe5WNC0uPO2xwV2MDy_KqkCZsohA8v9HnhnfTAcbyQ1P2VeikEVID7h17bRVIUnzw_QZjdenMS26LPHWsk4gqrztZqoaHnTnIUOq0GKE3TzTBzVrbICCgKAm56BcAZt7KRk7wRChESw8O_0DnMDlBOITzJcE0FPWn-8gl83wukv5AdvioAP4wsSJ80vNhvasnefu_EkLCcQ48a8pdZoWS68RNAGKVx607CzGw6OsJuc6z7_kkeTBxntj3TStlAV3-wsypL2EKmFQ3fqpm0zY5m_8tZ10Pn6P9A2_Zyj8vM4DHAbxo5S30oGaE3JnW7hprw8NApRocKJkI1ogNn69IbmkHMcyVyK_HLzO8gTwNTU8H8X8VGoxtQeugbAZAkB9wpwrKSNKiZWd9BQ0wxbUlBVgZ1_d3_A=w478-h314-no" alt="hitting" class="center2">
+                            <h2>Athletics</h2>
+                            <p>Four Year Starter for the Ohio State Buckeye's Baseball Team</p>
+                            <p><b>Awards and Honors</b></p>
+                            <p>Ohio State University Scholar Athlete Recipient</p>
+                            <p>2016 Big Ten Conference Championship</p>
+                            <p>2016 All Big Ten Tournament Team Selection</p>
+                            <p>2014 All Big Ten Team Selection</p>
 
-<!--Skills-->
-<div id="sidebar">
-  <form>
-    <h2>Skills</h2>
-    <ul id=skills>
-    <li><img src="Assets/html-5.png">: HTML</li>
-      <li><img src="Assets/css.png">: CSS</li>
-    <li><img src="Assets/csharp.png">: C#</li>
-    <li><img src="Assets/visual-studio.png">: Visual Studio </li>
-    </form>
-</div>
-
-<div id="details">
-    <form>
-      <img src="../Portfolio/Assets/headshot.jpg">
-        <h2>Details</h2>
-        <ul id="details">
-        <li><b>Name:</b> Troy Kuhn</li>
-          <li><b>Age:</b>: 25 years old</li>
-        <li><b>Location: </b>Zionsville, Indiana</li>
-        <li><b>Email: </b> troykuhn22@gmail.com</li>
-        </form>
-</div>
-
-<!--MyResume-->
-<section id="resume">
-<div id="resume">
-    <embed src="../Portfolio/Assets/Troy-Kuhn-Resume.pdf" width="800px" height="700px" />
-</div>
-</section>
-
-
-  <!--Projects-->
-  <section id ="main">
-<div class="panel">
-    <a href="https://codepen.io/troykuhn/full/dwKNOo"><img src="../Portfolio/Assets/Capture.PNG" class="project" alt="CSSCartoon" border="0" /></a>
-    <h2>Cartoon Project</h2>
-    <p>My rendition of Stewie from the television show "Family Guy" made purely from html and css.</p>
-    <a href="https://codepen.io/troykuhn/full/dwKNOo"><button>View Project</button></a>
-</div>
-<div class="panel">
-    <a href="https://github.com/troykuhn/GoldBadgeChalleneges/tree/master/01_Challenge"><img src="../Portfolio/Assets/Challenge01.PNG" class="project" alt="MenuApplication" border="0" /></a>
-    <h2>.NET Project 1</h2>
-    <p>I have created a console application for a restaurant that allows the user to create a menu item, delete a menu item, and list all items on the restaurant's menu. I have also included Unit Tests for the application in the second link.</p>
-    <a href="https://github.com/troykuhn/GoldBadgeChalleneges/tree/master/01_Challenge"><button>View Project</button></a> <a href="https://github.com/troykuhn/GoldBadgeChalleneges/tree/master/01_Challenge_Tests"><button>View Unit Tests</button></a>
-</div>
-<div class="panel">
-    <a href="https://github.com/troykuhn/GoldBadgeChalleneges/tree/master/02_Challenge"><img src="../Portfolio/Assets/Challenge02.PNG" class="project" alt="InsuranceApplication" border="0" /></a>
-    <h2>.NET Project 2</h2>
-    <p>This project contains console application software for an inusrance company. It allows the user to enter a new claim and display all of the claims based on their properties. It also contains a function in which the user can view and/or remove the first claim in the queue. </p>
-    <a href="https://github.com/troykuhn/GoldBadgeChalleneges/tree/master/02_Challenge"><button>View Project</button></a> <a href="https://github.com/troykuhn/GoldBadgeChalleneges/tree/master/02_Challenge_Tests"><button>View Unit Tests</button></a>
-</div>
-<div class="panel">
-    <a href="https://github.com/troykuhn/GoldBadgeChalleneges/tree/master/03_Challenge"><img src="../Portfolio/Assets/Challenge03.PNG" class="project" alt="EventApplication" border="0" /></a>
-    <h2>.NET Project 3</h2>
-    <p>This is a console application in which the user can add different events to list. It also allows the user to calculate the cost of each event, as well as calculate the total cost of all events added to the list.</p>
-    <a href="https://github.com/troykuhn/GoldBadgeChalleneges/tree/master/03_Challenge"><button>View Project</button></a><a href="https://github.com/troykuhn/GoldBadgeChalleneges/tree/master/03_Challenge_Tests"><button>View Unit Tests</button></a>
-</div>
-<div class="panel">
-    <a href="https://github.com/troykuhn/GoldBadgeChalleneges/tree/master/04_Challenge"><img src="../Portfolio/Assets/Challenge04.PNG" class="project" alt="BadgeSystem" border="0" /></a>
-    <h2>.NET Project 4</h2>
-    <p>This console application maintains a company's employee badge information system. It allows the user to create a badge ID number and assign door access to that ID. The user can also remove or add access to ID numbers that are already within the dictionary collection.</p>
-    <a href="https://github.com/troykuhn/GoldBadgeChalleneges/tree/master/04_Challenge"><button>View Project</button></a><a href="https://github.com/troykuhn/GoldBadgeChalleneges/tree/master/04_Challenge_Tests"><button>View Unit Tests</button></a>
-</div>
-</section>
-
-  <!--Contact-->
-  <section id="contact">
-      <div class="container">
-        <h2>Contact Me</h2>
-        <div class="row">
-          <div class="col-12">
-            <form action="https://formspree.io/troykuhn22@gmail.com" method="POST">
-              <div class="control-group">
-                <div class="form-group">
-                  <label>Name</label>
-                  <input 
-                    type="text" 
-                    class="form-control" 
-                    placeholder="Your Name" 
-                    id="name" 
-                    required 
-                    data-validation-required-message="Please enter your name"
-                    name="name"
-                    >
-                  <p class="help-block text-danger"></p>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group">
-                  <label>Email Address</label>
-                  <input 
-                    type="email" 
-                    class="form-control" 
-                    placeholder="Your Email" 
-                    id="email" 
-                    required 
-                    data-validation-required-message="Please enter your email"
-                    name="_replyto"
-                  >
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group">
-                  <textarea 
-                    class="form-control" 
-                    rows="7" 
-                    placeholder="Your Message" 
-                    id="message" 
-                    required 
-                    data-validation-required-message="Please leave a message"
-                    name="message"
-                  ></textarea>
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="text-center">
-                <div id="success"></div>
-                <button type="submit">
-                  <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-                  Send Message
-                </button>
-              </div>
-            </form>
-          </div>
+            </div>
         </div>
-      </div>
-    </section>
 
-    <br>
-    <br>
-    <br>
-    <br>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#skillsModal">
+            Skills
+        </button>
 
-  <!--Footer-->
-  <section id="footer">
-    <p>Follow me on social media:</p>
-    <div id="SocialMediaLinks">
-      <a href="mailto:troykuhn22@gmail.com" alt="Google Link" target="blank"><img src="../Portfolio/Assets/gmail.png" /></a>
-      <a href="https://www.github.com/troykuhn" alt="Github Link" target="blank"><img src="../Portfolio/Assets/github.png" /></a>
-      <a href="https://www.facebook.com/tr0ykuhn" alt="Facebook Link" target="blank"><img src="../Portfolio/Assets/facebook.png" /></a>
-      <a href="https://www.linkedin.com/troykuhn5" alt="Instagram Link" target="blank"><img src="../Portfolio/Assets/linkedin.png" /></a>
-      <a href="https://www.twitter.com/tr0ykuhn" alt="Twitter Link" target="blank"><img src="../Portfolio/Assets/twitter.png" /></a>
-    
+        <!-- Modal -->
+        <div class="modal fade" id="skillsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="skillsModalLabel">Skills</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <h2>Skills</h2>
+                            <ul id=skills>
+                                <li><img src="https://cdn4.iconfinder.com/data/icons/logos-3/504/ASP.Net-512.png">:
+                                    ASP.NET (Framework & Core)</li>
+                                <li><img src="https://image.flaticon.com/icons/svg/919/919827.svg">: HTML5</li>
+                                <li><img src="https://image.flaticon.com/icons/svg/919/919826.svg">: CSS3</li>
+                                <li><img src="https://image.flaticon.com/icons/svg/358/358879.svg">: C#</li>
+                                <li><img src="https://image.flaticon.com/icons/svg/906/906324.svg">: Visual Studio </li>
+                                <li><img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png">: Git</li>
+                                <li><img src="https://res.cloudinary.com/teepublic/image/private/s--JnfxjOP1--/t_Resized%20Artwork/c_fit,g_north_west,h_1054,w_1054/co_ffffff,e_outline:53/co_ffffff,e_outline:inner_fill:53/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1509564403/production/designs/2016815_1.jpg">:
+                                    Angular </li>
+                                <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAk1BMVEX/bDf/////ajT/aDD/Zy7/YB7/YSD/YiP/ZCf/Xhn/Ziz/Yyb//fz/YB//9/T/Zi3/5Nz/18z/6OH/0cT/qI//c0H/wrH/3NL/dkf/1Mj/n4L/ek3/bzr/uqb/o4j/5N3/j2z/7Of/l3f/spz/gVj/q5P/yLn/hV7/kW//mHn/vKr/y73/f1T/sJn/hF3/imX/Wgt6LMhZAAAPf0lEQVR4nNWdaXPjKBCGEUgCHVF83/ZEvhLHTpz//+sW5EuArMsgtG/VVu18mIyeNHQ30DTA0q0w6nSPy5/B7OP3NBkCAIbD+fa8Xu2W+24v0v7PW0DnD4/7y8MJOi4m/ruNEITgIgghQrZP8BtebGfLaazzI3QRxvvVyXGwj25UTwShTbCDPwfHWNOX6CCM94eFG9gFbJyQHzhgPYo1fI1qwrA7mHikyHLZ5kTEmwy6oeIvUkoYHdcEv9ehu1PamHwdlfofhYT9LzdAL9DdhAL8dVRnSVWEnRnBKvCukBgfxoq+TA3h/uTYyvAusp35SIkhFRDGOyd4Ze49EyTOIH79814m7B2wrwHvIt9d/zNM2Dl7qocnL+SdX5yQLxF2Phx13uUpo3PuGCKM155+voTR++gZIIxWDdjvzugcamcBdQmXRJ9/yZJNlo0SjidBo3xMwaSey6lDGM4cHfGvSNCZNUTYb3iAPuSjaQOE4cGIAS+CzqFyJleVsAtNGfAiH1SdjRUJfzxzBrwIejuNhNEvNszHFJwqxcYqhGO7uRifJ0SqOJwKhN/GR+hN0PvRQbh+Mw2WEv5QThidiGkqTv687GQsSdiD7ZiCDyG/5Nq4HOEYt2UKPgTdrjrCY2t8DCdvpIpw5JlmeSLvWw3hsq2AFHGjgvDHMc2RI6cYsZBw02bAMohFhMt2A1LEot2NAsLWOpmHitxNPuG+/YAUcV+fsPt/AKSIuYviPMKOa/rbS8rN2xTPIYz8VmYyGYIoJw3PIZy3Ldl+LnSqQ/hldsspEfTxm88KcvyC3zY5VCfcmN+SQc7wpx9HYdyZLj+c/BoB92lYfEY4Ne5GocOdHIbH7VueX/D61QhjYtrLvANp+ddf5HwUJE+8zRNC414Gf2X93vNmzjNvk004ML0p4w4yvioaQpBjRZL1d54QGs9lyCoLcIGAvcgZXF7mNmoWYVirLE2h0G+mBREgH9b2OSJEWcc2WYTr9wZpshRkOA1mQQpoxTmp5Pu6HGHf9JIw60D7akGqTY6PcDJChkwYGk9HfXmwPQCtMOeAHRL5r8qEB9Nj1Jd94m2IJhrkfOC7fBAuEY5Nj1HgSGuhlAWpOnlf6EhrRYlwaHqMQumTOAtS5aY2wyLCZfNlJIKQeKyUtuCe2fecl3AFopsSCCPTyQydhsIpdtqC+z+PupJd7rpOzE8Fwpn5RSHh984SC56vf+i6+MjqsfL+vi84G54wNu5mKCF33sI7mRCSH8v6zh9oDl/mxxN+mV5SAMGGnAXZ55INtWH+QENnjokj7JjOuJm4eUhXcWnPE2M2SvMCIpPHhRuO8LMFJuSIIvorx6nv/UBOVOBL2U/4fEZoPtgzcfFw8Aagf59XvT92EBMWRmwu7Kd/3G8bTCjkNAMXQHxHXLGEbly4Uc2tvlKErZiFQMxLV27aikyz4tr59ExMEbbBkSbi1xYMkaQQoxJnDSi1y/Mg7LWmIojwp54rzFkxP6O5yo0zCFdm0xkbe5h4brI4dWIrLW6g9kq5w/eVTBganYXvZNalcSDs/ECa+qOtxSPix0CdlFv7eKFEODKYc9ve7JEuj5B8DPGwYtnTlEfudyecG1sXImeVWg4cV8xKWNhOZFbEdOzOyi7u4EQkzF04a5W7Tbn28cS93B8OzvyOy4wios5H+YF2j/o3whJBRosQt5T4/oPAx8lVVBvw+7srQq1YIZ7ZM54wbwNLp/A2TgN6AOFdd9xfOxBA55Pbc9lWnEY45AiPRk4LIV8psvSAfS0bHbOogVwwmMZRGEa9/qpy+SdbhaQIP0zkM/binwh4us2+bpJ/wHfs2gAGTrXb/Ylua5QLYZlMSLkw70yWTgow/Tuv6+TdKEW4b34aQqEijbOgpSI+B/sUYfODFGLeVTILztM2Pb78S78O04QwbDyfsYexZEEOUEWOhaM74bRpTxp88vFcsqCSYYX7d8Kmw70j5GQbyYJWV0GOdQn6CWHeQYAGecLG+0a24FjFvIGLG2Gv0YUTFI8xGeCEB9yruRyQ7A0DNZO6vCAZy4CCBVntvArvnmwuM8J1g7ECLWIe8Ee24IrOwUDFrhFaXwlrZw3VJV1XooBI9KI0Ejq7jgL/nmy90v/i5ragyKclA/IWjE5+4otWKvz7W5wQNpeyBWI1iAwY0wnIfJGamh6WuFHCQVPR0BXLCHYMkBu2bNUEMfVFeyVJiD1ICE8NTUOpVm0nWbBPowRKErqSW2oFYpt2lLChaOiIN1t3b6IFWZS4+KKpouWcwwjLbbG+/m+JFQQMcMjv37MocVkQqDFhEvOBgmVKGUnXPmQLftGp93aZqmpmIVXQp4SbJnbzpRrlAbNgGjC8Ronk/5UVR/obSthERuOIlZ8SYDy0aZS4bh6pO0KhWQ1oYLMbemLJ9sAVADsEXaIE01id74NzCxSfGb/8r7hirZkE2HdolADx9U8KC88gCEGk25VCT6zEkwBHXjpjVVq15EZA9/Ut6IuAKxFw4LFzitufjkrj81sPTPUGC+EMPgtw/YgSlvLKOjwFe63LXwjjDMBFCjDcEu5OtuKbHmQPtIZDiIoAIxYlUunAQfEv3F8CnSsLaEuAmAf8h1JRgmqpeq1q78BMX8DPsKAA2GVrCdBL/Vn1N6AV0LihH4hedEYBQQqQRYn3VHKq4T4Z+gJVDx6r/PSTdFLNWXBHAUnqACocqv9twzPQlrRRD8YdJkkWPNBI7KaLLk4aXAI8gaH6n5oIf9uQ2wgVAMNfInTu0HMtd6LjhzLR5VKPzqqHFRPA+I4TTWyhwczK+C2BSkrWg8xx3KzIAOHDgj0bCU2C9DXgWOj4odcFb+zfrChYsBvQKIHS+dxI3wJAB+F9RR8nc5E6Fd6C7ODF5rYw1KbbvDR4mtSWRYwoy+cs4CzIevoQ7oy0r3O/T72v4fZkogkbj9SCD8AZjRKY2/3WeytXeTxMHQ+GnVFShwdgakieCTt4SQMq3LWQtVBO+HcFjPu7T98hl0ofeC8YjeY06v1x12I6WpvBDcGv2h/Pikii8XLte8G9lwWE9xM01rsPutPmAOFcceb9vumv5sQl6R9qnxa3uMh69yF+W6Ojt3sD3KpePb1LFWg0WiShfxJeogS3g2H9c/Xu9dG1he6ztSTi95LQnxy8bLn1Rkf3tWo0Az96LzZfj88YIuuxLLS76Gi2IDtBBN9ajy3uhy+9BEW4H9pAS01/CbQePcETDRvj/ebwmSQWj/LyC2ADncHJHox11rTB7QK7LvHR9TDJTlcqdJvoGYqnQO9loOtTaxD5xHWoyfwHoorKtWK5HRDprUtMnlUj8/PPaByzK693RK3J9kNuBPSV7VGzuWS7Wk7jW4CIJnfEY0P3O2AItJVi4N2+I3ZhCRkiu/743VB5BDs/tA56NkylY9+LFec28M/N9QxNzoD1HFxIx743K1JEu7kXTpJz/L4GV5PTiTqcowYrBZNaDA19FOSD+zRikwXJST2NpfwQOLeXeNTojXEvqfpS/U/mWrCnpPi39Kdc6toGal0NlNv8PKSogLusrrWJanPvXMBdw5eNr/WleR3QKgvmNPWNPps+mmCX1lkltMK8Ta4Oemjc+AsSyYULtbX6eUN00/wDC/dafWX3LdI1B9IINXBLNbljzAhjRfM/x4JdaOImtRdfCRWVyuXMwZWRJ0AuvdvU3V17bsHexEy/Bnt1J1Rx/xA+bYy+/DPUrgF374QK7pA+HaLx1ljb7EsjzMs94JevUUG5nePVgA29xpqhaxseNXe5n4WJ+GSw73lwTBG+eB//2RxcNvjcrCycvo//2jCFOBOwY9KA14TmQfjKVka2BcOBuRmYCPc5wrA+YbYF+4Zf86Se1OII6wf9TAtGXwafY73IXgmEdXsMQZzxhN3G8ABlcv4JhDWvzmQN0f7CfCPb5FxPIKy1hIKuZMHe1vgAZQr2EmGdfm2QiBaMZkZD4EOOJRHWuDAmzcFw5xpqqCUq1V3yQVh5QwoSAbDpF+VzlNk3sep2jehk9qA9Rb4oVRhYu38p13GT8bXpqVLvXyZhpTbCvAVHizbx8d2g04RVon66hHmEgjbx5fQRLmyy/FC6F+BWe2FTRfENvWv186a/COd+vmT8SRNJOf28Sy4T/TOCj2NsA73e8oX42rkaffXJ2Rp7D8T29B++SujRK7yNUCKx8dkoH7t3xLAdadpdvtBIrPL7Fv6lG3jKiq3oVf9QwfsWhW+U2LdVycOKP63J1Ziw+LSs9KhLfleRVE8nZsUk8OgoV6ktocAzizA37HMNc5gV/8aXBwxaI3lnWn7vKaelAX+PPqmAZXGx4ZZ9eRKfYMkkDJ+2e4VCX7UEkc5FTZVxNQQznvvKeHdt+mycwt/ZbvN97I57N1N2KJt7PLfGhuXeXcsZp9D2fRJg1/E8f3g6r1cbtqY0/qDnXX7Wi7KZ7x+WKa2DECG76BHbZgVB2fcP9V4m06fsUp7sd0hb8BhwdQViu7Q8wrY8OVNF4pMRBYT/n1fHb4J+tfeAzT8nW1VPSz6fvsu9NNGmvb6qv8vdjrfVS8vPekW2iND8y9Xl9ezF6gLCqPp7BIYE0RMvU0Bo6W50pkqpZ8sqEv5fHGpOWXIRobX/PyBKjUOrEDZ2A+sFcU1uqhOyjuntltTbtioha2fcZomvENQgZO1w2yvhKZd6hG22YrEFSxEmTahbqSInU5ow6Y3XPkkPZbxAaE1bUQXEC0pNC18htMZu29LwdOMpFYRJN+o2iWyz9tVeIbTCc5t2p9ysndEXCS3rpz3+xisOg3UIrX7QjsmIcCknWoPQiuctqBwFZB5X+ehKhKz1tumwAb1V8We+QGh1kVmfattVRmgdQitcG4z+0FmXDRL1CS3rSEyZ0SdVDViP0JQZoTOrbMCahHQ2GijHD4a5G06KCdn5W7ND1SclloJKCZutyuef7m6I0LJ654auxiDvI67/mS8Q0ul4etPPiJzPcgtBHYSMUbMdkbet52BUEdK18dnR53Ns9+sl+ykhpPNx5mkpqYHEW8Wvf54CQupXvyfKDYneht91ArwkJYRUnRlWuHpEgfuV04qpklQR0lxuf3aUQCLifY5qhz9J6gipov0HwS+dHEMb4/MoVvlRSgmpwulq6JFab99BRBwwO6qz3kWqCZl6ozV4I5VsiezABV/feafVdaWDkKm3n829t8BHsAAUIj9wnO1qH2v6El2EiTrHzfoE3DdMfJuiPlgvpZskcB17vt4cdZjuLq2EicKo091vBofz73wyTF7TGM5Pn1+zwWY07URKQl6u/gM0f+Q/XYVJrQAAAABJRU5ErkJggg==">:
+                                    Postman </li>
+                                <li><img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Boostrap_logo.svg">:
+                                    Bootstrap </li>
+                                <li><img src="https://developer.nexmo.com/assets/images/extend/azure-icon.png">: Azure
+                                </li>
+                                <li><img src="https://www.versusmind.eu/sites/default/files/logo_methodes_agiles_0.jpg">:
+                                    Agile </li>
+                                <li><img src="https://cdn.iconscout.com/icon/free/png-256/heroku-5-569467.png">: Heroku</li>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#projectModal">
+            Projects
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModalLabel">Projects</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                                <img src="https://lh3.googleusercontent.com/QQXJt9epxgiCL2kjNECfPnvJKFVprgoZwgtRxoO-m8uwZntwjj5kiZ2BolGHpUgsDIfGKEm_TBwyXGww6KZ0Ceez-jWpW_vesqi8HzEWcUZpko5SEzB-JJBzyeh5p4ZUx4dnGHAVKbR0TCk10Q8efLSzt2bjr0jgqwi5ulqqvtyLF4OQljx4q1X18S9tAzsQ0VS2NC5wiybsObBWlu6lsGvBtFhzS7VLGgEIMhKeKlAQQaTf9CRoeL0YeFdxWVtyrDyR1I0mxPZsLesgVqogrZ6QDTG6psLunbzeFhY8jV9YxnWqY2YeCGBASlSI9yqe-Z_U9jI0zZ5LGIYrScTbZ2cJfiTl412sh8obDYc9_weq7ktLTRtH1BWz1H3-P8z8j8t2b5UEEJGpfHFtbZ_mKsXc_9gi_53GkKfg0v5bOcLltzgGLlCow6fii6NX5idmyv-L8b4zzoXVhaGfYDxL_vysZwzrU57FxvP8vLYLjaKv1NJChp3KP0u8uWfXI0NrV8XsRVuZQufWEJNoRB6dh0qZ5xl0iaZJvdFr9xivw9rgPzsIny8-5cv5HQ6l8K2R1mcc7MhzoJwHBqxkyH2Z8NWDwimbOM08DysDG7pEGrxdPUyJYgHdNRBQ6TgfPfJmsIMDg0s4yd6SE8uZ29zXOPrN3TvTFdijHqGA8soVnRFd2k56of3GrciVR34EFfud0WRTFnqYx6wtUIzz8irGZ_ss=w1346-h648-no" alt="project1" class="project1">
+                            <h2>Vegetable Store E-Commerce Store Front</h2>
+                            <p>This is a Full-Stack N-Tier web application in ASP.NET Framework utilizing my C#, HTML, CSS and Bootstrap skills.</p>
+                            <a href="https://garlicstorefront.azurewebsites.net/" type="button" class="btn btn-secondary"><button>Deployed Site</button></a>
+                            <a href="https://github.com/troykuhn/GarlicStoreMVC" type="button" class="btn btn-secondary"><button>Repository Link</button></a>
+
+                            <img src="https://lh3.googleusercontent.com/0N_9sK26MZHHxXMmNMhm41BwURaBpAt6gZW2dkjLZ1xXc2YZHjeNFDzle-xYd4IVI_bzYk86QGrozMgEPeQvY-450c2rlJ-Iucj1mHeAfNL7y-cLxA_rbV2Q0RLeIC_dq2J3y6qu7ngXpwAOB0nTGGbIjGL-gOXM70602TBh-jJzgWZR--X-ZQ_ks2GdKh6neRtuThSbKefr2nK7v7p7Xx5mUgJJfckC0Vv77te_9RIfn7nsXSbyuJgERaGlGKKX-c0C-ak-Dmlppe0OcZY7S3FIY4zEdcehI9pZ6qBb_rdKqa-J5CG0HUUABmeFb4P9jQ40WD-t3iX0sapIPTdIa9AYaTAUIawBi_nJU5joGpObTwSu_UsSYiNpzi75uTyqEa7mWDp-A5AozH-HoSZqefMnbufrnlUmTULrwGG0S0qRxavv5oT-Rs6LGfWQDUEeZbhoZ_pZDG49_6CyjZylTHa0DevK8-1zFsxM6bcCwaJp6u5IpQ2qJn-KjEsGAi45QJO8dvIuh7uAYP70ZKr7-YQ_c1TFGw_g-P6G0LOU8duZHXqre8IvzQuDKsJglrYHo2Gh2RKnRvgCAx4iapRLY5QYFDhWdHIydCB-fjx5fbOi4_XCnvOqr_iIy62AX0P0jf_GmjCCFlN3D_x0jzADtBZHbB5FHqus8SXTEr-7P_W88TvpCxHKChetpIOw2kOvhUgHwi3EZ7r9OZPSHxCa-XZ_=w1022-h657-no" alt="project1" class="project1">
+                            <h2>.NET Framework Console Applications</h2>
+                            <p>This project required me to develop various industry based console applications using only C#.</p>
+                            <a href="https://github.com/troykuhn/GoldBadgeChallenges" type="button" class="btn btn-secondary"><button>Repository Link</button></a>
+
+                            <img src="https://lh3.googleusercontent.com/IhzQvBgpd9UH4KCxfxI1deY235A2ChRAfD6pQ6woB5yz6_gwbCAfQUu_5usLR_hEoJNx-PO1xw-3ld9b8X2VhkHLpIALM3JkMOGaiNbzewAmtMXWasfgnpHtCrji9OMTYFBt3ehd70ZTrEx4Wwu9zQdZrf7IczhVb4VKEIO7WgxzsyrdXNkmqav31t2yFkIdEWVrf9x8LqvlV3qfW8UkzK9ymUFmP03W27D1GzncDFGVrUTUaoGRu5dz-csDNNbFq_f5GweBG2i9A15HfBXKZwPDHeH0Tyi7gZa_LL8nBHPB94NATdbAPE4YsyjCdr-qiJYwHLeifE6DqxAeezyaBqYj1rsysVLKQnnhBaQG1VLVjbVr82__tywpN_X5PMS5bRcmb2sJ8Qh611wGMXZQzbeB3PQQ5yfBGh4sT4MQD-NJfMTft8GVs8p47S-W9II93pAraGZfc20kMvVMj3gnb4FNFJtWbvV-qjAJYjawI-WQhr4znVBCSxL54NxhynXIv9nH985AOnTrbOozfmCrb7L_xAyQRAsWGbcDU73J44Zp3SVWLcGlZo_eN2dzu6_2-uqsX8GxPNdTf40K_S29_Vlfaz2AIZ_90U4yoF5pk0eFzAF4Mqkuix4knIvJaeLZYKQu_5TO-6c_EcBex3V4NeUqefNCEJ2sQF9IaHOONqEoBxWB4t73ZPSWshhNSZd7pv-uqV--3RksG1VUdqqBctUD=w365-h370-no" alt="project1" class="project1">
+                            <h2>HTML5/CSS3 Cartoon</h2>
+                            <p>This creature was my first venture into coding using HTML and CSS</p>
+                            <a href="https://codepen.io/troykuhn/full/dwKNOo" type="button" class="btn btn-secondary"><button>Link to CodePen</button></a>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+            Contact
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactModalLabel">About</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <section id="contact">
+                            <div class="container">
+                                <h2>Contact Me</h2>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <form action="https://formspree.io/troykuhn22@gmail.com" method="POST">
+                                            <div class="control-group">
+                                                <div class="form-group">
+                                                    <label>Name</label>
+                                                    <input type="text" class="form-control" placeholder="Your Name" id="name"
+                                                        required data-validation-required-message="Please enter your name"
+                                                        name="name">
+                                                    <p class="help-block text-danger"></p>
+                                                </div>
+                                            </div>
+                                            <div class="control-group">
+                                                <div class="form-group">
+                                                    <label>Email Address</label>
+                                                    <input type="email" class="form-control" placeholder="Your Email"
+                                                        id="email" required data-validation-required-message="Please enter your email"
+                                                        name="_replyto">
+                                                    <p class="help-block text-danger"></p>
+                                                </div>
+                                            </div>
+                                            <div class="control-group">
+                                                <div class="form-group">
+                                                    <textarea class="form-control" rows="7" placeholder="Your Message"
+                                                        id="message" required data-validation-required-message="Please leave a message"
+                                                        name="message"></textarea>
+                                                    <p class="help-block text-danger"></p>
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <div id="success"></div>
+                                                <button type="submit">
+                                                    <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                                    Send Message
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-  </section>
+</wrapper>
 
 
-  <!--Bootstrap JS Files-->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
+
+    <!--Credit to @hakimel https://codepen.io/hakimel/pen/aIhkf for the animated background-->
+
+
+   
+
+          <body>
+    <div id="header" class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4 text-center">Troy Kuhn</h1>
+            <div class="text-center">
+                <p class="lead text-center">Junior Web Developer</p>
+
+                <wrapper class="row col-12">
+                    <div class="col-4"></div>
+                    <div class="soc col-4 justify-content-center">
+
+                        <li><a class="icon-26 twitter" href="https://www.twitter.com/tr0ykuhn"> title="Twitter">
+                                <div class="ir">
+                                    <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                                        <path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"></path>
+                                    </svg>
+                                </div>
+                            </a></li>
+
+                        <li><a class="icon-10 facebook" href="https://www.facebook.com/tr0ykuhn" title="Facebook">
+                                <div class="ir">
+                                    <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                                        <path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"></path>
+                                    </svg>
+                                </div>
+                            </a></li>
+
+                        <li><a class="icon-15 instagram" href="https://www.instagram.com/tr0ykuhn" title="Instagram">
+                                <div class="ir">
+                                    <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                                        <path d="M256 109.3c47.8 0 53.4 0.2 72.3 1 17.4 0.8 26.9 3.7 33.2 6.2 8.4 3.2 14.3 7.1 20.6 13.4 6.3 6.3 10.1 12.2 13.4 20.6 2.5 6.3 5.4 15.8 6.2 33.2 0.9 18.9 1 24.5 1 72.3s-0.2 53.4-1 72.3c-0.8 17.4-3.7 26.9-6.2 33.2 -3.2 8.4-7.1 14.3-13.4 20.6 -6.3 6.3-12.2 10.1-20.6 13.4 -6.3 2.5-15.8 5.4-33.2 6.2 -18.9 0.9-24.5 1-72.3 1s-53.4-0.2-72.3-1c-17.4-0.8-26.9-3.7-33.2-6.2 -8.4-3.2-14.3-7.1-20.6-13.4 -6.3-6.3-10.1-12.2-13.4-20.6 -2.5-6.3-5.4-15.8-6.2-33.2 -0.9-18.9-1-24.5-1-72.3s0.2-53.4 1-72.3c0.8-17.4 3.7-26.9 6.2-33.2 3.2-8.4 7.1-14.3 13.4-20.6 6.3-6.3 12.2-10.1 20.6-13.4 6.3-2.5 15.8-5.4 33.2-6.2C202.6 109.5 208.2 109.3 256 109.3M256 77.1c-48.6 0-54.7 0.2-73.8 1.1 -19 0.9-32.1 3.9-43.4 8.3 -11.8 4.6-21.7 10.7-31.7 20.6 -9.9 9.9-16.1 19.9-20.6 31.7 -4.4 11.4-7.4 24.4-8.3 43.4 -0.9 19.1-1.1 25.2-1.1 73.8 0 48.6 0.2 54.7 1.1 73.8 0.9 19 3.9 32.1 8.3 43.4 4.6 11.8 10.7 21.7 20.6 31.7 9.9 9.9 19.9 16.1 31.7 20.6 11.4 4.4 24.4 7.4 43.4 8.3 19.1 0.9 25.2 1.1 73.8 1.1s54.7-0.2 73.8-1.1c19-0.9 32.1-3.9 43.4-8.3 11.8-4.6 21.7-10.7 31.7-20.6 9.9-9.9 16.1-19.9 20.6-31.7 4.4-11.4 7.4-24.4 8.3-43.4 0.9-19.1 1.1-25.2 1.1-73.8s-0.2-54.7-1.1-73.8c-0.9-19-3.9-32.1-8.3-43.4 -4.6-11.8-10.7-21.7-20.6-31.7 -9.9-9.9-19.9-16.1-31.7-20.6 -11.4-4.4-24.4-7.4-43.4-8.3C310.7 77.3 304.6 77.1 256 77.1L256 77.1z"></path>
+                                        <path d="M256 164.1c-50.7 0-91.9 41.1-91.9 91.9s41.1 91.9 91.9 91.9 91.9-41.1 91.9-91.9S306.7 164.1 256 164.1zM256 315.6c-32.9 0-59.6-26.7-59.6-59.6s26.7-59.6 59.6-59.6 59.6 26.7 59.6 59.6S288.9 315.6 256 315.6z"></path>
+                                        <circle cx="351.5" cy="160.5" r="21.5"></circle>
+                                    </svg>
+                                </div>
+                            </a></li>
+
+                        <li><a class="icon-17 linkedin" href="https://www.linkedin.com/in/troykuhn5/" title="LinkedIn">
+                                <div class="ir">
+                                    <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                                        <path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"></path>
+                                    </svg>
+                                </div>
+                            </a></li>
+
+                        <li><a class="icon-13 github" href="https://github.com/troykuhn" title="GitHub">
+                                <div class="ir">
+                                    <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                                        <path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"></path>
+                                    </svg>
+                                </div>
+                            </a></li>
+
+                    </div>
+            </div>
+        </div>
+    </div>
+    </wrapper>
+
+
+
+    
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+    <div class="confetti-piece"></div>
+          
 </body>
 
 </html>
