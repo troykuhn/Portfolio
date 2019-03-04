@@ -253,7 +253,7 @@ html {
   }
   .soc li {
     display: inline-flex;
-    margin: 12px;
+    margin: 5px;
     margin: 1.2rem;
   }
   .soc a, .soc svg {
@@ -261,10 +261,14 @@ html {
   }
   .soc a {
     position: relative;
-    height: 96px;
-    height: 9.6rem;
-    width: 96px;
-    width: 9.6rem;
+    height: 50px;
+    height: 8rem;
+    width: 100%;
+    width: 8rem;
+  }
+
+  .row {
+      width: 100%;
   }
   
   .icon-1:hover, .icon-2:hover, .icon-3:hover, .icon-4:hover, .icon-5:hover, .icon-6:hover, .icon-7:hover, .icon-8:hover, .icon-9:hover, .icon-10:hover, .icon-11:hover, .icon-12:hover, .icon-13:hover, .icon-14:hover, .icon-15:hover, .icon-16:hover, .icon-17:hover, .icon-18:hover, .icon-19:hover, .icon-20:hover, .icon-21:hover, .icon-22:hover, .icon-23:hover, .icon-24:hover, .icon-25:hover, .icon-26:hover, .icon-27:hover, .icon-28:hover, .icon-29:hover, .icon-30:hover, .icon-31:hover, .icon-32:hover {
@@ -364,7 +368,6 @@ div.modalbox {
     align-items: center;
     justify-content: center;
     font-size: 140%;
-    
 } 
 
 .modal-body {
@@ -391,16 +394,16 @@ h2 {
 }
 
 .btn-primary {
-    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
-    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: .25em .25em 0 .25em;
-    font-size: 2em;
+    background-color: #1d20224a;
+    margin: .5em .5em 0 .5em;
+    font-size: 1.25em;
 }
 
+.btn-primary:hover {
+    color: yellow;
+    background-color: #1d20224a;
+    border-color: orangered;
+}
 .modal-open {
     overflow: visible;
 }
