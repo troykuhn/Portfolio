@@ -451,3 +451,11 @@ ul#skills li img {
     margin: 1em 1em 0em 1em;
     border: 1px solid whitesmoke;
 }
+
+div#resumeModal .modal-body {
+        margin-right: auto;
+        margin-left:auto;
+        width: 900px;
+        height: 1000px;
+        text-align: none;
+}
